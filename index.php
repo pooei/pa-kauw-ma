@@ -6,6 +6,6 @@
 </head>
 
 <body>
-ทีม : ผ้าขาวม้า ค๊าบป๋ม
+Nikuya
 </body>
 </html>
