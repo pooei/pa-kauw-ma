@@ -48,7 +48,7 @@ include("connect.php");
       <td width="153" align="left" valign="top"><?php echo($rse[$i]['voic_fname']);?>&nbsp;&nbsp;<?php echo($rse[$i]['voic_lname']);?></td>
       
       <td align="left" valign="top"><?php echo($rse[$i]['voic_nick']);?></td>
-	  <td align="left" valign="top"><img src=<?php echo($rse[$i]['voic_photo']);?> ></td>
+	  <td  align="left" valign="top"><img src=<?php echo($rse[$i]['voic_photo']);?> width="100" height="100" ></td>
     </tr>
   <?php }//end for ?>
 </table>
