@@ -37,7 +37,7 @@ include("connect.php");
     <td width="49"><div align="center" class="style1">รหัส</div></td>
       <td width="153"><div align="center" class="style1">ชื่อ-สกุล</div></td>
       <td width="80"><div align="center" class="style1">ชื่อเล่น</div></td>
-	 < td width="80"><div align="center" class="style1">รูป</div></td>
+	 <td width="80"><div align="center" class="style1">รูป</div></td>
     </tr>
   <?php
 	for($i=0;$i<$nc;$i++)
