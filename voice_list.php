@@ -31,7 +31,7 @@ include("connect.php");
 			?>
          </font></p>
      <font size="2" color="#333333">
-<table width="300" border="1" cellpadding="1" cellspacing="1" bordercolor="#0072A6">
+<table  accesskey="1" cellpadding="1" cellspacing="1" bordercolor="#0072A6">
   <tr bgcolor="#006EA6">
 
     <td width="49"><div align="center" class="style1">รหัส</div></td>
