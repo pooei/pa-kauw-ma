@@ -33,9 +33,11 @@ include("connect.php");
      <font size="2" color="#333333">
 <table width="300" border="1" cellpadding="1" cellspacing="1" bordercolor="#0072A6">
   <tr bgcolor="#006EA6">
+
     <td width="49"><div align="center" class="style1">รหัส</div></td>
       <td width="153"><div align="center" class="style1">ชื่อ-สกุล</div></td>
       <td width="80"><div align="center" class="style1">ชื่อเล่น</div></td>
+	  td width="80"><div align="center" class="style1">รูป</div></td>
     </tr>
   <?php
 	for($i=0;$i<$nc;$i++)
@@ -46,6 +48,7 @@ include("connect.php");
       <td width="153" align="left" valign="top"><?php echo($rse[$i]['voic_fname']);?>&nbsp;&nbsp;<?php echo($rse[$i]['voic_lname']);?></td>
       
       <td align="left" valign="top"><?php echo($rse[$i]['voic_nick']);?></td>
+	  <td align="left" valign="top"><?php echo($rse[$i]['voic_photo']);?></td>
     </tr>
   <?php }//end for ?>
 </table>
