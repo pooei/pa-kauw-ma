@@ -1,15 +1,15 @@
 <?php
 class ConnectDB
 {
-	public $host="localhost";
-	public $user="root";
-	public $pass= "root";
-	public $dbname="pakauwma";
-	
 	//public $host="localhost";
-	//public $user="pakauwma";
-	//public $pass= "pakauwma";
+	//public $user="root";
+	//public $pass= "root";
 	//public $dbname="pakauwma";
+	
+	public $host="localhost";
+	public $user="pakauwma";
+	public $pass= "pakauwma";
+	public $dbname="pakauwma";
 
 	function openConn() 
 	{
