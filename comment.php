@@ -8,9 +8,11 @@ include("connect.php");
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>ผ้าขาวม้า  ความคิดเห็น</title>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>ผ้าขาวม้า</title>
+body,td,th {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+}
+</style>
 </head>
 
 <body>
