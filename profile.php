@@ -75,7 +75,7 @@ if((isset($_GET['edit'])&&($_GET['edit']==1))&&(isset($_GET['id'])&&($_GET['id']
 	<? echo $voic_profile; } ?></textarea></td>
   </tr>
   <tr>
-    <td align="right"><a href="voic_list.php">กลับ</a>
+    <td align="right"><a href="voice_list.php">กลับ</a>
     </td>
     <td>&nbsp;</td>
     <td align="right">&nbsp;</td>
