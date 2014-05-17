@@ -49,7 +49,10 @@ include("connect.php");
     </tr>
   <?php }//end for ?>
 </table>
-<?php
+</font>
+     <p>&nbsp;</p>
+     <p><a href="index.php">กลับ</a><font size="2" color="#333333">
+       <?php
 		
 	}//end if nc>=1
 }//end if chk==1
@@ -58,8 +61,9 @@ elseif($chk==2)
 	echo("<font color='red'> ไม่พบข้อมูล </font>");
 }		
  ?>
-
-</font>
+       
+       </font>
+     </p>
   <p>
 </body>
 </html>
