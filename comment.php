@@ -14,13 +14,13 @@ include("connect.php");
 </head>
 
 <body>
-
+นักพากษ์
   <img src= "aaa.jpg">
 
 <table>
 	<tr>
-		<td>user</td>
-		<td>comment</td>
+		<td>ชื่อผู้ใช้งาน</td>
+		<td>ความคิดเห็น</td>
 	</tr>
 	<tr>
 		<td>นาย โก้</td>
@@ -28,8 +28,8 @@ include("connect.php");
 	</tr>
 </table>
 <p><form>
-	<input type="text" /><br/>
-	<input type="text" /><br/>
+	รายชื่อ <input type="text"  name = "user" /><br/>
+	ความคิดเห็น<input type="text" name  = "comment" /><br/>
 	<input type="submit" />
 	
 </form></p>
