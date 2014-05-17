@@ -22,17 +22,18 @@ if((isset($_GET['edit'])&&($_GET['edit']==1))&&(isset($_GET['id'])&&($_GET['id']
 {
 	$sqlbb="SELECT * FROM voiceovers WHERE voic_id='".$_GET['id']."'";
 	$result=$cdb->getsql($sqlbb);
-	$voic_id=$result[voic_id];	
-	$voic_fname=$result[voic_fname];
-	$voic_lname=$result[voic_lname];
+	$voic_id=$result[0][voic_id];	
+	$voic_fname=$result[0]['voic_fname'];
+	$voic_lname=$result[0][voic_lname];
 		
-	$voic_nick=$result[voic_nick];
-	$voic_education=$result[voic_education];
-	$voic_principle=$result[voic_principle];
-	$voic_email=$result[voic_email];
-	$voic_profile=$result[voic_profile];
-	$voic_brith=$result[voic_brith];
-	$voic_photo=$result[voic_photo];
+	$voic_nick=$result[0][voic_nick];
+	$voic_education=$result[0][voic_education];
+	$voic_principle=$result[0][voic_principle];
+	$voic_email=$result[0][voic_email];
+	$voic_profile=$result[0][voic_profile];
+	$voic_brith=$result[0][voic_brith];
+	$voic_photo=$result[0][voic_photo];
+
 	?>
     
 <table width="800" border="0" align="center">
@@ -47,7 +48,7 @@ if((isset($_GET['edit'])&&($_GET['edit']==1))&&(isset($_GET['id'])&&($_GET['id']
   </tr>
   <tr>
     <td align="right">ชื่อ</td>
-    <td><input name="fname" type="text" id="fname" value="<? echo $voic_fname;?>" size="25" /></td>
+    <td><? echo $voic_fname;?></td>
     <td align="right">คติ</td>
     <td><input name="username2" type="text" id="username2" value="<? echo $voic_principle;?>" size="25" /></td>
   </tr>
@@ -65,14 +66,17 @@ if((isset($_GET['edit'])&&($_GET['edit']==1))&&(isset($_GET['id'])&&($_GET['id']
     <td><input name="frm_pwd" type="text" id="frm_pwd" value="<? echo $voic_email;?>" size="25" /></td>
   </tr>
   <tr>
-    <td align="right">ประวัติการศึกษา</td>
-    <td><textarea name="address" cols="30" rows="5" id="address">
-    <? echo $voic_education;?></textarea></td>
+    <td align="right" >ประวัติการศึกษา</td>
+    <td align="left" valign="middle"><textarea name="address" cols="30" rows="5" id="address">
+    <? echo $voic_education; ?></textarea></td>
     <td align="right">ประวัติการทำงาน </td>
-    <td align="left" valign="middle"><textarea name="address2" cols="30" rows="5" id="address2"><? echo $voic_profile;?></textarea></td>
+    <td align="left" valign="middle">
+    <textarea name="address2" cols="30" rows="5" id="address2">
+	<? echo $voic_profile; } ?></textarea></td>
   </tr>
   <tr>
-    <td align="right"><a href="file:///C|/Users/SONICMASTER/Downloads/voic_list.php">กลับ</a></td>
+    <td align="right"><a href="voic_list.php">กลับ</a>
+    </td>
     <td>&nbsp;</td>
     <td align="right">&nbsp;</td>
     <td>&nbsp;</td>
