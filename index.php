@@ -6,6 +6,7 @@
 </head>
 
 <body>
-Nikuya
+<p>เมนู</p>
+<p><a href="voice_list.php">รายชื่อนักพากษ์</a></p>
 </body>
 </html>
