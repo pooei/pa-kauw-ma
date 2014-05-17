@@ -42,7 +42,6 @@ include("connect.php");
 	{
 	 ?>
   <tr>
-<<<<<<< HEAD
     <td width="100" height="41" rowspan="2" align="center" valign="top"><img src=<?php echo($rse[$i]['voic_photo']);?> height="100" /><br /><br /></td>
     <td width="153" rowspan="2" align="right" valign="top"><span class="style1">ชื่อ-สกุล</span> : <br />
     <span class="style1">ชื่อเล่น</span> : </td>
@@ -55,8 +54,6 @@ include("connect.php");
       <p>&nbsp;</p>
       <p>&nbsp;</p></td>
   </tr>
-
-=======>>>>>>> 721c83ed0dcaa2a70d6a89bb08a5f5475a17a05c
   <?php }//end for ?>
     <tr>
     <td height="41" colspan="3" align="center" valign="top" bgcolor="#DEDEDE"><p>

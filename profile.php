@@ -69,9 +69,7 @@ if((isset($_GET['edit'])&&($_GET['edit']==1))&&(isset($_GET['id'])&&($_GET['id']
     <td><textarea name="address" cols="30" rows="5" id="address">
     <? echo $voic_education;?></textarea></td>
     <td align="right">ประวัติการทำงาน </td>
-    <td align="left" valign="middle"><textarea name="address2" cols="30" rows="5" id="address2"><? echo $voic_profile
-;?>
-    </textarea></td>
+    <td align="left" valign="middle"><textarea name="address2" cols="30" rows="5" id="address2"><? echo $voic_profile;?></textarea></td>
   </tr>
   <tr>
     <td align="right"><a href="file:///C|/Users/SONICMASTER/Downloads/voic_list.php">กลับ</a></td>
