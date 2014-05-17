@@ -1,0 +1,13 @@
+CREATE TABLE `comment` (
+  `com_id` int(11) NOT NULL auto_increment,
+  `voic_id` int(11) NOT NULL,
+  `com_description` varchar(500) NOT NULL,
+  PRIMARY KEY  (`com_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+
+
+INSERT INTO `comment` VALUES (1, 1, 'พูดชื่อนักเตะผิดน่ะ ครับ');
+INSERT INTO `comment` VALUES (2, 2, 'ดีมากเลยครับผม');
+INSERT INTO `comment` VALUES (3, 3, 'พูดติดๆ ขัดๆ ควรพูดให้ดีกว่านี้น่ะครับ');
+INSERT INTO `comment` VALUES (4, 4, 'ชอบมากๆๆๆๆๆๆ');
